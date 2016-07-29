@@ -1,0 +1,30 @@
+#
+# For a description of the syntax of this configuration file,
+# see the file kconfig-language.txt in the NuttX tools repository.
+#
+
+config MYAPPS_FILESD
+	bool "\"File sd\" example"
+	default n
+	---help---
+		Enable the \"File sd\" example
+
+if MYAPPS_FILESD
+
+config MYAPPS_FILESD_PROGNAME
+	string "Program name"
+	default "filesd"
+	depends on BUILD_KERNEL
+	---help---
+		This is the name of the program that will be use when the NSH ELF
+		program is installed.
+
+config MYAPPS_FILESD_PRIORITY
+	int "file sd task priority"
+	default 100
+
+config MYAPPS_FILESD_STACKSIZE
+	int "file sd stack size"
+	default 2048
+
+endif # MYAPPS_FILESD

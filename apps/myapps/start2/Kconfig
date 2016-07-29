@@ -1,0 +1,30 @@
+#
+# For a description of the syntax of this configuration file,
+# see the file kconfig-language.txt in the NuttX tools repository.
+#
+
+config MYAPPS_START2
+	bool "\"Offline activity\""
+	default n
+	---help---
+		Enable the \"Start2\" application
+
+if MYAPPS_START2
+
+config MYAPPS_START2_PROGNAME
+	string "Program name"
+	default "start2"
+	depends on BUILD_KERNEL
+	---help---
+		This is the name of the program that will be use when the NSH ELF
+		program is installed.
+
+config MYAPPS_START2_PRIORITY
+	int "start2 task priority"
+	default 100
+
+config MYAPPS_START2_STACKSIZE
+	int "start2 stack size"
+	default 16384
+
+endif # MYAPPS_START2

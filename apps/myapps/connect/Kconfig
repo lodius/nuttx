@@ -1,0 +1,30 @@
+#
+# For a description of the syntax of this configuration file,
+# see the file kconfig-language.txt in the NuttX tools repository.
+#
+
+config MYAPPS_CONNECT
+	bool "\"Connect\" app"
+	default n
+	---help---
+		Enable the \"Connect\" app
+
+if MYAPPS_CONNECT
+
+config MYAPPS_CONNECT_PROGNAME
+	string "Program name"
+	default "connect"
+	depends on BUILD_KERNEL
+	---help---
+		This is the name of the program that will be use when the NSH ELF
+		program is installed.
+
+config MYAPPS_CONNECT_PRIORITY
+	int "connect task priority"
+	default 100
+
+config MYAPPS_CONNECT_STACKSIZE
+	int "connect stack size"
+	default 2048
+
+endif # MYAPPS_CONNECT

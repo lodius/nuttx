@@ -1,0 +1,100 @@
+libxx_cxapurevirtual.o: libxx_cxapurevirtual.cxx \
+ /home/hoang/nuttx-git2/nuttx/include/cxx/cassert \
+ /home/hoang/nuttx-git2/nuttx/include/assert.h \
+ /home/hoang/nuttx-git2/nuttx/include/nuttx/compiler.h \
+ /home/hoang/nuttx-git2/nuttx/include/nuttx/config.h \
+ /home/hoang/nuttx-git2/nuttx/include/stdint.h \
+ /home/hoang/nuttx-git2/nuttx/include/arch/types.h \
+ /home/hoang/nuttx-git2/nuttx/include/limits.h \
+ /home/hoang/nuttx-git2/nuttx/include/arch/limits.h
+libxx_eabi_atexit.o: libxx_eabi_atexit.cxx \
+ /home/hoang/nuttx-git2/nuttx/include/nuttx/config.h \
+ /home/hoang/nuttx-git2/nuttx/include/cxx/cstdlib \
+ /home/hoang/nuttx-git2/nuttx/include/stdlib.h \
+ /home/hoang/nuttx-git2/nuttx/include/nuttx/compiler.h \
+ /home/hoang/nuttx-git2/nuttx/include/sys/types.h \
+ /home/hoang/nuttx-git2/nuttx/include/stdint.h \
+ /home/hoang/nuttx-git2/nuttx/include/arch/types.h \
+ /home/hoang/nuttx-git2/nuttx/include/limits.h \
+ /home/hoang/nuttx-git2/nuttx/include/arch/limits.h libxx.hxx
+libxx_cxa_atexit.o: libxx_cxa_atexit.cxx \
+ /home/hoang/nuttx-git2/nuttx/include/nuttx/config.h \
+ /home/hoang/nuttx-git2/nuttx/include/cxx/cassert \
+ /home/hoang/nuttx-git2/nuttx/include/assert.h \
+ /home/hoang/nuttx-git2/nuttx/include/nuttx/compiler.h \
+ /home/hoang/nuttx-git2/nuttx/include/stdint.h \
+ /home/hoang/nuttx-git2/nuttx/include/arch/types.h \
+ /home/hoang/nuttx-git2/nuttx/include/limits.h \
+ /home/hoang/nuttx-git2/nuttx/include/arch/limits.h libxx.hxx \
+ /home/hoang/nuttx-git2/nuttx/include/cxx/cstdlib \
+ /home/hoang/nuttx-git2/nuttx/include/stdlib.h \
+ /home/hoang/nuttx-git2/nuttx/include/sys/types.h
+libxx_delete.o: libxx_delete.cxx \
+ /home/hoang/nuttx-git2/nuttx/include/nuttx/config.h libxx.hxx \
+ /home/hoang/nuttx-git2/nuttx/include/cxx/cstdlib \
+ /home/hoang/nuttx-git2/nuttx/include/stdlib.h \
+ /home/hoang/nuttx-git2/nuttx/include/nuttx/compiler.h \
+ /home/hoang/nuttx-git2/nuttx/include/sys/types.h \
+ /home/hoang/nuttx-git2/nuttx/include/stdint.h \
+ /home/hoang/nuttx-git2/nuttx/include/arch/types.h \
+ /home/hoang/nuttx-git2/nuttx/include/limits.h \
+ /home/hoang/nuttx-git2/nuttx/include/arch/limits.h
+libxx_deletea.o: libxx_deletea.cxx \
+ /home/hoang/nuttx-git2/nuttx/include/nuttx/config.h libxx.hxx \
+ /home/hoang/nuttx-git2/nuttx/include/cxx/cstdlib \
+ /home/hoang/nuttx-git2/nuttx/include/stdlib.h \
+ /home/hoang/nuttx-git2/nuttx/include/nuttx/compiler.h \
+ /home/hoang/nuttx-git2/nuttx/include/sys/types.h \
+ /home/hoang/nuttx-git2/nuttx/include/stdint.h \
+ /home/hoang/nuttx-git2/nuttx/include/arch/types.h \
+ /home/hoang/nuttx-git2/nuttx/include/limits.h \
+ /home/hoang/nuttx-git2/nuttx/include/arch/limits.h
+libxx_new.o: libxx_new.cxx \
+ /home/hoang/nuttx-git2/nuttx/include/nuttx/config.h \
+ /home/hoang/nuttx-git2/nuttx/include/cxx/cstddef \
+ /home/hoang/nuttx-git2/nuttx/include/nuttx/compiler.h \
+ /home/hoang/nuttx-git2/nuttx/include/stddef.h \
+ /home/hoang/nuttx-git2/nuttx/include/sys/types.h \
+ /home/hoang/nuttx-git2/nuttx/include/stdint.h \
+ /home/hoang/nuttx-git2/nuttx/include/arch/types.h \
+ /home/hoang/nuttx-git2/nuttx/include/limits.h \
+ /home/hoang/nuttx-git2/nuttx/include/arch/limits.h \
+ /home/hoang/nuttx-git2/nuttx/include/debug.h \
+ /home/hoang/nuttx-git2/nuttx/include/syslog.h \
+ /usr/lib/gcc/arm-none-eabi/4.9.3/include/stdarg.h \
+ /home/hoang/nuttx-git2/nuttx/include/stdbool.h libxx.hxx \
+ /home/hoang/nuttx-git2/nuttx/include/cxx/cstdlib \
+ /home/hoang/nuttx-git2/nuttx/include/stdlib.h
+libxx_newa.o: libxx_newa.cxx \
+ /home/hoang/nuttx-git2/nuttx/include/nuttx/config.h \
+ /home/hoang/nuttx-git2/nuttx/include/cxx/cstddef \
+ /home/hoang/nuttx-git2/nuttx/include/nuttx/compiler.h \
+ /home/hoang/nuttx-git2/nuttx/include/stddef.h \
+ /home/hoang/nuttx-git2/nuttx/include/sys/types.h \
+ /home/hoang/nuttx-git2/nuttx/include/stdint.h \
+ /home/hoang/nuttx-git2/nuttx/include/arch/types.h \
+ /home/hoang/nuttx-git2/nuttx/include/limits.h \
+ /home/hoang/nuttx-git2/nuttx/include/arch/limits.h \
+ /home/hoang/nuttx-git2/nuttx/include/debug.h \
+ /home/hoang/nuttx-git2/nuttx/include/syslog.h \
+ /usr/lib/gcc/arm-none-eabi/4.9.3/include/stdarg.h \
+ /home/hoang/nuttx-git2/nuttx/include/stdbool.h libxx.hxx \
+ /home/hoang/nuttx-git2/nuttx/include/cxx/cstdlib \
+ /home/hoang/nuttx-git2/nuttx/include/stdlib.h
+libxx_stdthrow.o: libxx_stdthrow.cxx \
+ /home/hoang/nuttx-git2/nuttx/include/cxx/cstdlib \
+ /home/hoang/nuttx-git2/nuttx/include/nuttx/config.h \
+ /home/hoang/nuttx-git2/nuttx/include/stdlib.h \
+ /home/hoang/nuttx-git2/nuttx/include/nuttx/compiler.h \
+ /home/hoang/nuttx-git2/nuttx/include/sys/types.h \
+ /home/hoang/nuttx-git2/nuttx/include/stdint.h \
+ /home/hoang/nuttx-git2/nuttx/include/arch/types.h \
+ /home/hoang/nuttx-git2/nuttx/include/limits.h \
+ /home/hoang/nuttx-git2/nuttx/include/arch/limits.h \
+ /home/hoang/nuttx-git2/nuttx/include/debug.h \
+ /home/hoang/nuttx-git2/nuttx/include/syslog.h \
+ /usr/lib/gcc/arm-none-eabi/4.9.3/include/stdarg.h \
+ /home/hoang/nuttx-git2/nuttx/include/stdbool.h
+libxx_cxa_guard.o: libxx_cxa_guard.cxx \
+ /home/hoang/nuttx-git2/nuttx/include/nuttx/compiler.h \
+ /home/hoang/nuttx-git2/nuttx/include/nuttx/config.h

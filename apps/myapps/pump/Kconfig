@@ -1,0 +1,30 @@
+#
+# For a description of the syntax of this configuration file,
+# see the file kconfig-language.txt in the NuttX tools repository.
+#
+
+config MYAPPS_PUMP
+	bool "\"Pump \" app"
+	default n
+	---help---
+		Enable the \"Pump \" app
+
+if MYAPPS_PUMP
+
+config MYAPPS_PUMP_PROGNAME
+	string "Program name"
+	default "pump"
+	depends on BUILD_KERNEL
+	---help---
+		This is the name of the program that will be use when the NSH ELF
+		program is installed.
+
+config MYAPPS_PUMP_PRIORITY
+	int "pump task priority"
+	default 100
+
+config MYAPPS_PUMP_STACKSIZE
+	int "pump stack size"
+	default 2048
+
+endif # MYAPPS_PUMP

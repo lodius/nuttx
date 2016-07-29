@@ -1,0 +1,56 @@
+#
+# For a description of the syntax of this configuration file,
+# see the file kconfig-language.txt in the NuttX tools repository.
+#
+
+config MYAPPS_GSENSOR
+	bool "ADC ground sensor example"
+	default n
+	depends on ADC
+	---help---
+		Enable the ADC example
+
+if MYAPPS_GSENSOR
+
+config MYAPPS_GSENSOR_PRIORITY
+	int "Alarm task priority"
+	default 100
+
+config MYAPPS_GSENSOR_STACKSIZE
+	int "Alarm stack size"
+	default 2048
+
+config MYAPPS_GSENSOR_DEVPATH
+	string "ADC device path"
+	default "/dev/gsensor"
+	---help---
+		The default path to the ADC device. Default: /dev/gsensor
+
+config MYAPPS_GSENSOR_NSAMPLES
+	int "Number of Sample Groups"
+	default 0
+	depends on !NSH_BUILTIN_APPS
+	---help---
+		If NSH_BUILTIN_APPS is defined, then the number of samples is provided
+		on the command line and this value is ignored.  Otherwise, this number
+		of samples is collected and the program terminates.  Default:  0 (samples
+		are collected indefinitely).
+
+config MYAPPS_GSENSOR_GROUPSIZE
+	int "Number of Samples per Group"
+	default 4
+	---help---
+		The number of samples to read at once. Default: 4
+
+config MYAPPS_GSENSOR_SWTRIG
+	bool "Use software trigger"
+	default y
+	---help---
+		Some ADCs may be configured so there is no automatic or periodic
+		conversion of samples.  Rather, the ADC sampling must be trigger by
+		software via an ioctl command.  Select this option only if
+		applicable for your ADC configuration.  In this case, the test will
+		issue the software trigger ioctl before attempting to read from the
+		ADC.
+
+endif

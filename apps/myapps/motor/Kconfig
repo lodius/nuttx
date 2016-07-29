@@ -1,0 +1,30 @@
+#
+# For a description of the syntax of this configuration file,
+# see the file kconfig-language.txt in the NuttX tools repository.
+#
+
+config MYAPPS_MOTOR
+	bool "\"Motor driver\" example"
+	default n
+	---help---
+		Enable the \"Motor driver\" example
+
+if MYAPPS_MOTOR
+
+config MYAPPS_MOTOR_PROGNAME
+	string "Program name"
+	default "motor"
+	depends on BUILD_KERNEL
+	---help---
+		This is the name of the program that will be use when the NSH ELF
+		program is installed.
+
+config MYAPPS_MOTOR_PRIORITY
+	int "motor task priority"
+	default 100
+
+config MYAPPS_MOTOR_STACKSIZE
+	int "motor stack size"
+	default 2048
+
+endif # MYAPPS_MOTOR

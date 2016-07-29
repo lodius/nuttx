@@ -1,0 +1,38 @@
+#
+# For a description of the syntax of this configuration file,
+# see the file kconfig-language.txt in the NuttX tools repository.
+#
+
+config MYAPPS_MYLED
+	bool "\"My led\" example"
+	default n
+	---help---
+		Enable the \"My led\" example
+
+if MYAPPS_MYLED
+
+config MYAPPS_MYLED_PROGNAME
+	string "Program name"
+	default "myled"
+	depends on BUILD_KERNEL
+	---help---
+		This is the name of the program that will be use when the NSH ELF
+		program is installed.
+
+config MYAPPS_MYLED_PRIORITY
+	int "Myled task priority"
+	default 100
+
+config MYAPPS_MYLED_STACKSIZE
+	int "Myled stack size"
+	default 2048
+
+config MYAPPS_MYLED_DEVPATH
+	string "LED device path"
+	default "/dev/myled"
+
+config MYAPPS_MYLED_LEDSET
+	hex "Subset of LEDs to use"
+	default 0x0f
+
+endif # MYAPPS_MYLED

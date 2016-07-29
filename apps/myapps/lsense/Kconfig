@@ -1,0 +1,30 @@
+#
+# For a description of the syntax of this configuration file,
+# see the file kconfig-language.txt in the NuttX tools repository.
+#
+
+config MYAPPS_LSENSE
+	bool "\"Light sensor\" example"
+	default n
+	---help---
+		Enable the \"Light sensor\" example
+
+if MYAPPS_LSENSE
+
+config MYAPPS_LSENSE_PROGNAME
+	string "Program name"
+	default "lsense"
+	depends on BUILD_KERNEL
+	---help---
+		This is the name of the program that will be use when the NSH ELF
+		program is installed.
+
+config MYAPPS_LSENSE_PRIORITY
+	int "lsense task priority"
+	default 100
+
+config MYAPPS_LSENSE_STACKSIZE
+	int "lsense stack size"
+	default 2048
+
+endif # MYAPPS_LSENSE

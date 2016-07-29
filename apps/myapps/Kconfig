@@ -1,0 +1,31 @@
+#
+# For a description of the syntax of this configuration file,
+# see the file kconfig-language.txt in the NuttX tools repository.
+#
+
+menu "MyApps"
+
+source "$APPSDIR/myapps/myled/Kconfig"
+source "$APPSDIR/myapps/filesd/Kconfig"
+source "$APPSDIR/myapps/gsensor/Kconfig"
+source "$APPSDIR/myapps/alarm2/Kconfig"
+source "$APPSDIR/myapps/console/Kconfig"
+source "$APPSDIR/myapps/tempsense/Kconfig"
+source "$APPSDIR/myapps/lsense/Kconfig"
+source "$APPSDIR/myapps/ssend/Kconfig"
+
+source "$APPSDIR/myapps/wap/Kconfig"
+source "$APPSDIR/myapps/wap2/Kconfig"
+
+source "$APPSDIR/myapps/test/Kconfig"
+source "$APPSDIR/myapps/motor/Kconfig"
+source "$APPSDIR/myapps/start/Kconfig"
+source "$APPSDIR/myapps/connect/Kconfig"
+source "$APPSDIR/myapps/start2/Kconfig"
+source "$APPSDIR/myapps/curtain/Kconfig"
+source "$APPSDIR/myapps/fan/Kconfig"
+source "$APPSDIR/myapps/pump/Kconfig"
+
+
+
+endmenu # Examples

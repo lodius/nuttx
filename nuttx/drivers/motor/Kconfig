@@ -1,0 +1,10 @@
+#
+# For a description of the syntax of this configuration file,
+# see the file kconfig-language.txt in the NuttX tools repository.
+#
+
+config TB6612
+	bool "Enable TB6612 driver support"
+	default n
+	---help---
+		Enable TB6612 motor controller driver. Default is no

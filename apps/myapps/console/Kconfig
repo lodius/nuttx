@@ -1,0 +1,22 @@
+#
+# For a description of the syntax of this configuration file,
+# see the file kconfig-language.txt in the NuttX tools repository.
+#
+
+config MYAPPS_CONSOLE
+    bool "Serial Blaster example"
+    default n
+    ---help---
+        Enable the serial blaster example
+
+if MYAPPS_CONSOLE
+
+config MYAPPS_CONSOLE_STACKSIZE
+	int "CPU hog stack size"
+	default 2048
+
+config MYAPPS_CONSOLE_PRIORITY
+	int "CPU hog task priority"
+	default 100
+
+endif

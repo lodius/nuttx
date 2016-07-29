@@ -1,0 +1,30 @@
+#
+# For a description of the syntax of this configuration file,
+# see the file kconfig-language.txt in the NuttX tools repository.
+#
+
+config MYAPPS_TEMPSENSE
+	bool "\"Temp sensor\" example"
+	default n
+	---help---
+		Enable the \"Temp sensor\" example
+
+if MYAPPS_TEMPSENSE
+
+config MYAPPS_TEMPSENSE_PROGNAME
+	string "Program name"
+	default "tempsense"
+	depends on BUILD_KERNEL
+	---help---
+		This is the name of the program that will be use when the NSH ELF
+		program is installed.
+
+config MYAPPS_TEMPSENSE_PRIORITY
+	int "tempsense task priority"
+	default 100
+
+config MYAPPS_TEMPSENSE_STACKSIZE
+	int "tempsense stack size"
+	default 2048
+
+endif # MYAPPS_TEMPSENSE

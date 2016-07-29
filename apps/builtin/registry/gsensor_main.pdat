@@ -1,0 +1,1 @@
+int gsensor_main(int argc, char *argv[]);

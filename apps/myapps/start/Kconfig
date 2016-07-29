@@ -1,0 +1,30 @@
+#
+# For a description of the syntax of this configuration file,
+# see the file kconfig-language.txt in the NuttX tools repository.
+#
+
+config MYAPPS_START
+	bool "\"Start application : Entry point for IoT application\""
+	default n
+	---help---
+		Enable the \"Start\" application
+
+if MYAPPS_START
+
+config MYAPPS_START_PROGNAME
+	string "Program name"
+	default "start"
+	depends on BUILD_KERNEL
+	---help---
+		This is the name of the program that will be use when the NSH ELF
+		program is installed.
+
+config MYAPPS_START_PRIORITY
+	int "start task priority"
+	default 100
+
+config MYAPPS_START_STACKSIZE
+	int "start stack size"
+	default 16384
+
+endif # MYAPPS_START
